@@ -1,0 +1,55 @@
+.ca__container {
+    padding: 40px 18px;
+    & .ca__title {
+      font-family: "PT Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 18px;
+      /* or 124% */
+      text-align: center;
+      text-transform: uppercase;
+  
+      color: #000000;
+      @media (min-width: $tablet__width) {
+        font-size: 30px;
+      }
+    }
+    & .ca__text {
+      font-family: "PT Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      /* or 124% */
+      text-align: center;
+      text-transform: uppercase;
+  
+      color: #333333;
+      padding-bottom: 32px;
+    }
+    @media (min-width: $tablet__width) {
+      padding-top: 61px;
+      text-align: center;
+      max-width: 435px;
+      margin: 0 auto;
+      }
+  }
+  
+  .ca__button {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    /* identical to box height, or 124% */
+  
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+    background: #81B3D2;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+  }
