@@ -21,4 +21,7 @@ margin: 0 auto;
 @media(min-width:$tablet__width) {
     max-width: 900px;
 }
+@media(min-width:$desktop__width) {
+    max-width: none;
+}
 }

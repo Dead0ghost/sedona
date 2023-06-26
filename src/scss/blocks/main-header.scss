@@ -16,5 +16,45 @@
 }
 
 .main-header {
-  margin: 17px 20px;
+  @media (min-width: $tablet__width) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+.main-header__link {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  text-decoration: none;
+  &--active {
+    color: #766357;
+  }
+}
+
+.main-header__list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+  @media (max-width: $mobile__max-width) {
+    display: none;
+  }
+}
+
+.main-header__container {
+  display: flex;
+  gap: 75px;
+  @media(min-width:$desktop__width) {
+    gap: 165px;
+  }
 }

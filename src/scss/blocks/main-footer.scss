@@ -2,8 +2,8 @@
     text-align: center;
     @media (min-width: $tablet__width) {
       display: flex;
-      align-items: center;
       padding: 36px 45px;
+      align-items: center;
       }
   }
   
@@ -19,6 +19,9 @@
   
     color: #000000;
     margin-bottom: 34px;
+    @media (min-width: $tablet__width) { 
+      margin: 0;
+    }
   }
   
   .main-footer__text {
@@ -49,11 +52,22 @@
     width: fit-content;
     gap: 6px;
     margin-bottom: 21px;
+    @media (min-width: $tablet__width) { 
+      margin-top: 36px; 
+      margin: 0 auto;
+    }
+    @media (min-width: $desktop__width) {
+      margin: 0 auto;
   }
+}
+
   
   .main-footer__author {
     display: flex;
     justify-content: center;
     gap: 7px;
     align-items: center;
+    @media (min-width: $desktop__width) {
+      margin: 0; 
+    }
   }

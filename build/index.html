@@ -16,6 +16,26 @@
   <body>
     <div class="body__container">
       <header class="main-header">
+        <ul class="main-header__list">
+          <div class="main-header__container">
+            <li class="main-header__item">
+              <a class="main-header__link main-header__link--active" href="#"
+                >Главная</a
+              >
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">Фото и видео</a>
+            </li>
+          </div>
+          <div class="main-header__container">
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">Контакты</a>
+            </li>
+          </div>
+        </ul>
         <img class="main-header__logo" src="img/logo-2.svg" alt="logo" />
         <button class="main-header__button">
           <span class="visually-hidden">открытие и закрытие меню</span>
@@ -24,6 +44,7 @@
       <main class="main-content">
         <section class="first-screen">
           <picture>
+            <source media="(min-width:1280px)" srcset="img/intro2.jpg" />
             <source media="(min-width:768px)" srcset="img/Intro.jpg" />
             <img class="first-screen__img" src="img/Frame 7.png" alt="" />
           </picture>
@@ -47,10 +68,8 @@
                   </p>
                 </div>
                 <picture>
-                  <source
-                    media="(min-width: 768px )"
-                    srcset="img/photo-city@1x.jpg"
-                  />
+                  <source media="(min-width: 1280px)" srcset="img/city.jpg" />
+                  <source media="(min-width: 768px )" srcset="img/photo-city@1x.jpg" />
                   <img class="benefit__img" src="img/Frame 4.jpg" alt="" />
                 </picture>
               </div>
@@ -135,8 +154,8 @@
             <div class="ca__container">
               <h2 class="ca__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
               <p class="ca__text">
-                Укажите предполагаемые даты поездки, и мы покажем вам
-                лучшие предложения гостиниц в седоне
+                Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+                предложения гостиниц в седоне
               </p>
               <button class="ca__button">Найти Гостиницу</button>
             </div>
