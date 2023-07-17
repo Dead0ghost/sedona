@@ -16,6 +16,7 @@
 }
 
 .main-header {
+  padding: 17px 20px;
   @media (min-width: $tablet__width) {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -39,6 +40,19 @@
   &--active {
     color: #766357;
   }
+  @media (max-width: $mobile__max-width) {
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+  }
 }
 
 .main-header__list {
@@ -47,14 +61,52 @@
   padding-left: 35px;
   padding-right: 35px;
   @media (max-width: $mobile__max-width) {
-    display: none;
+    position: fixed;
+    background-color: #81b3d2;
+    width: 100vw;
+    top: -50vh;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    transition: 0.5s;
+    &.active {
+      top: 0;
+      transition: 0.5s;
+    }
   }
 }
 
 .main-header__container {
   display: flex;
   gap: 75px;
-  @media(min-width:$desktop__width) {
+  @media (min-width: $desktop__width) {
     gap: 165px;
+  }
+  @media (max-width: $mobile__max-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.main-header__item {
+  @media (max-width: $mobile__max-width) {
+    box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.20), 0px 1px 0px 0px rgba(255, 255, 255, 0.20) inset;
+  }
+}
+
+.main-header__close-button {
+  @media (max-width: $mobile__max-width) {
+    width: 22px;
+    height: 22px;
+  background: url(./../../public/img/icon-cross.svg) no-repeat;
+  position: absolute;
+  left: 278px;
+  top: 17px;
+  }
+  @media (min-width: $tablet__width) {
+    display: none;
   }
 }
