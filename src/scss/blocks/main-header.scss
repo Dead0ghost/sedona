@@ -32,13 +32,17 @@
   /* identical to box height, or 150% */
   text-align: center;
   text-transform: uppercase;
-
+  transition: 0.5s;
   color: #000000;
 
   mix-blend-mode: normal;
   text-decoration: none;
   &--active {
     color: #766357;
+  }
+  &:hover {
+    color: $hover__color;
+    transition: 0.5s;
   }
   @media (max-width: $mobile__max-width) {
     padding: 15px 0;
